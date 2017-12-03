@@ -5,12 +5,12 @@ class AuthorsController < ApplicationController
   def index
     @authors = Author.all
 
-    render json: @authors
+   #render @authors # can be ommited
   end
 
   # GET /authors/1
   def show
-    render json: @author
+    # like here, render @author is ommited...
   end
 
   # POST /authors
