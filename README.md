@@ -1,24 +1,7 @@
-# README
+# Rails 5.1 API Tutorial
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Code used in Software Engineering course of MEI-IOT / IPT.pt
+Topic: How and why to build an API using Rails 5.1
 
-Things you may want to cover:
+Use vagrant to check the project. Every major step is identified with a tag (or branch). Details in the class slides.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
