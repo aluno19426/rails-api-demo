@@ -5,3 +5,28 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+comments_interval = (0..10).to_a
+articles_interval = (0..5).to_a
+
+10.times do
+	a = Author.create(name: Faker::Name.name)
+	total_articles = articles_interval.sample
+
+	total_articles.times do
+		a.articles.create(title: Faker::Simpsons.quote, content: Faker::Lorem.paragraph)
+	end
+end
+
+articles = Article.all
+authors = Author.all
+
+articles.each do |art|
+	total_comments = comments_interval.sample
+
+	total_comments.times do
+		art.comments.create(content: Faker::Lorem.sentence, author: authors.sample)
+	end
+end
+
+
