@@ -10,7 +10,9 @@ class AuthorsController < ApplicationController
 
   # GET /authors/1
   def show
-    render json: @author
+    render json: {
+      name: @author.name,
+      articles: @author.articles }
   end
 
   # POST /authors
