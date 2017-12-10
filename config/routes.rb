@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 			resources :authors do
 				resources :articles
 			end
+			resource :authentication, only: %i[create]
+			#post 'authentication', to: 'authentication#create', as: "auth"
 		end
 	end
 
